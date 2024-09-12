@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Médecin Nutritionniste</title>
+<style>
+:root {
+--primary-color: #007bff;
+--secondary-color: #79c97d;
+--text-color: #333;
+--bg-color: #fff;
+--footer-bg-color: #f1f1f1;
+--border-color: #eee;
+}
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: var(--secondary-color);
+}
+
+header {
+background-color: var(--bg-color);
+padding: 10px 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 20px;
+margin: 0;
+padding: 0;
+}
+
+nav a {
+text-decoration: none;
+color: var(--text-color);
+}
+
+.formation-section {
+text-align: center;
+padding: 40px 20px;
+max-width: 1200px;
+margin: auto;
+}
+
+.formation-section h1 {
+font-size: 2.5rem;
+color: var(--text-color);
+}
+
+.formation-section h1 span {
+color: var(--primary-color);
+}
+
+.formation-section p {
+color: #555;
+margin: 10px 0;
+}
+
+.text-image-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+margin: 20px 0;
+}
+
+.text-content {
+max-width: 800px;
+text-align: left;
+}
+
+.text-image-container img {
+max-width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+.formation-details {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 20px;
+}
+
+.sprint {
+background-color: var(--bg-color);
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+flex: 1;
+min-width: 280px;
+max-width: 400px;
+text-align: left;
+}
+
+.sprint h3 {
+color: var(--primary-color);
+margin-bottom: 10px;
+}
+
+.sprint .content {
+margin-top: 10px;
+}
+
+.sprint ul {
+list-style: none;
+padding: 0;
+}
+
+.sprint ul li {
+padding: 8px 0;
+border-bottom: 1px solid var(--border-color);
+}
+
+.form-card form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+button {
+padding: 10px;
+background-color: var(--primary-color);
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+footer {
+background-color: var(--footer-bg-color);
+padding: 20px;
+text-align: center;
+margin-top: 20px;
+}
+
+.blog-section {
+background-color: #f9f9f9; /* Couleur de fond douce */
+padding: 40px 20px;
+max-width: 1200px;
+margin: auto;
+}
+
+.blog-section h2 {
+color: #007bff; /* Couleur principale pour les titres */
+font-size: 2rem;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.blog-post {
+display: flex;
+align-items: center; /* Aligne le texte et l'image verticalement */
+gap: 20px; /* Espacement entre l'image et le texte */
+margin-bottom: 40px;
+padding: 20px;
+background-color: #fff; /* Couleur de fond blanche pour chaque article */
+border-radius: 8px; /* Coins arrondis pour une meilleure apparence */
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre portée pour ajouter de la profondeur */
+}
+
+.blog-image img {
+width: 100%; /* Assure que l'image s'adapte à son conteneur */
+max-width: 300px; /* Largeur maximale de l'image */
+height: auto; /* Conserve le ratio de l'image */
+border-radius: 8px; /* Coins arrondis pour les images */
+object-fit: cover; /* Redimensionne l'image pour qu'elle occupe toute la largeur de son conteneur */
+margin-right: 20px; /* Ajoute un espace droit à gauche pour séparer l'image de son texte */
+flex-shrink: 0; /* Empêche l'image de dépasser sa largeur pour occuper toute la largeur de son conteneur */
+flex-basis: 300px; /* Fixe la largeur de l'image à 300px */
+flex-grow: 0; /* Empêche l'image de dépasser sa largeur pour occuper toute la largeur de son conteneur */
+flex-basis: 0; /* Fixe la largeur de l'image à 0 pour qu'elle ne soit pas responsable de son conteneur */
+flex-grow: 1; /* Empêche l'image de dépasser sa largeur pour occuper toute la largeur de son conteneur */
+
+}
+
+.blog-content {
+flex: 1; /* Prend tout l'espace disponible restant */
+text-align: left; /* Aligne le texte à gauche */
+}
+
+.blog-content h3 {
+margin: 0 0 10px 0;
+color: #333; /* Couleur du texte pour les titres */
+}
+
+.blog-content p {
+margin: 0 0 10px 0;
+color: #555; /* Couleur du texte pour le contenu */
+}
+
+.blog-content a {
+text-decoration: none;
+color: #007bff; /* Couleur du lien */
+font-weight: bold;
+}
+
+.blog-content a:hover {
+text-decoration: underline; /* Effet de survol pour les liens */
+}
+
+
+</style>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="#">En bref</a></li>
+<li><a href="#">Programme</a></li>
+<li><a href="#">Formation</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section class="formation-section">
+<h1>Le Journal <span>de la nutrition</span></h1>
+<div class="text-image-container">
+<div class="text-content">
+<p>Vous avez le bac et souhaitez devenir coach en nutrition pour aider des personnes à être en meilleure santé? Apprenez les bases de l’alimentation et de l’équilibre alimentaire avec notre formation nutritionniste à distance !</p>
+<p>Proposez des prestations de qualité afin d’accompagner les individus désireux d’améliorer leur alimentation et plus généralement, leur santé quotidienne. Inscription rapide et facile !</p>
+</div>
+<img src="DOCTEUR.jpg" alt="Image représentant un nutritionniste">
+</div>
+</section>
+<!-- Blog Section -->
+<section class="blog-section">
+    <h2>Le journal de la nutrition</h2>
+    <div class="blog-post">
+        <div class="blog-image">
+            <img src="docteur nutrition.jpg" alt="Acide Gras Oméga-3">
+        </div>
+        <div class="blog-content">
+            <h3>Les Bienfaits de l'Acide Gras Oméga-3</h3>
+            <p>Les acides gras oméga-3 jouent un rôle crucial dans notre santé. Découvrez comment intégrer ces nutriments essentiels dans votre alimentation quotidienne pour améliorer votre bien-être général.</p>
+            
+            <h4>Pourquoi les Oméga-3 sont-ils essentiels ?</h4>
+            <p>Les oméga-3 sont des acides gras polyinsaturés qui jouent un rôle vital dans le maintien de la santé du cœur, la fonction cérébrale et l'équilibre inflammatoire.</p>
+            
+            <h4>Sources Riches en Oméga-3</h4>
+            <ul>
+                <li>Poissons gras comme le saumon, le maquereau et les sardines.</li>
+                <li>Graines de lin et huile de lin.</li>
+                <li>Noix et graines de chia.</li>
+                <li>Algues marines.</li>
+            </ul>
+            
+            <h4>Conseils pour Intégrer les Oméga-3 dans Votre Alimentation</h4>
+            <ol>
+                <li>Incorporez des poissons gras dans vos repas deux fois par semaine.</li>
+                <li>Utilisez de l'huile de lin dans vos salades.</li>
+                <li>Ajoutez des noix ou des graines de chia à vos yaourts ou smoothies.</li>
+            </ol>
+            
+            <blockquote>
+                "Les oméga-3 sont comme un carburant pour votre cerveau et votre cœur. Ils vous aident à rester en forme et alerte tout au long de la journée."
+            </blockquote>
+            
+            <a href="#">Lire la suite</a>
+        </div>
+
+
+    </div>    <div class="blog-post">
+        <div class="blog-image">
+            <img src="medium-shot-man-cooking-with-smartphone.jpg" alt="Équilibre alimentaire">
+        </div>
+        <div class="blog-content">
+            <h3>Comment Équilibrer Votre Alimentation</h3>
+            <p>Un équilibre alimentaire est essentiel pour une bonne santé. Apprenez des stratégies simples pour créer des repas équilibrés et soutenir vos objectifs de santé.</p>
+            
+            <h4>Les Fondements d'une Alimentation Équilibrée</h4>
+            <p>Pour maintenir une alimentation équilibrée, il est important de consommer une variété d'aliments dans les proportions appropriées. Voici quelques éléments clés à considérer :</p>
+            
+            <ul>
+                <li><strong>Protéines :</strong> Incluez des sources de protéines maigres comme le poulet, le poisson, et les légumineuses.</li>
+                <li><strong>Glucides :</strong> Optez pour des glucides complexes tels que les grains entiers, les légumes et les fruits.</li>
+                <li><strong>Graisses saines :</strong> Consommez des graisses saines provenant d'avocats, d'oléagineux et d'huile d'olive.</li>
+                <li><strong>Hydratation :</strong> Buvez suffisamment d'eau tout au long de la journée.</li>
+            </ul>
+            
+            <h4>Planification des Repas</h4>
+            <p>La planification des repas est une excellente façon d'assurer que vous obtenez tous les nutriments nécessaires. Essayez ces conseils :</p>
+            <ol>
+                <li>Préparez vos repas à l'avance pour éviter les choix alimentaires impulsifs.</li>
+                <li>Incluez une portion de légumes à chaque repas.</li>
+                <li>Variez vos sources de protéines pour éviter la monotonie.</li>
+            </ol>
+            
+            <blockquote>
+                "Un repas équilibré est la clé pour une vie saine. Prenez le temps de planifier et de préparer des repas qui nourrissent votre corps et votre esprit."
+            </blockquote>
+            
+            <a href="#">Lire la suite</a>
+        </div>
+    </div>
+    <div class="formation-details">
+        <!-- Sprint 1: En bref -->
+        <section class="sprint">
+        <h3>En bref</h3>
+        <div class="content">
+            <p><strong>La formation Nutritionniste en ligne</strong></p>
+            <ul>
+                <li>Obtenez une attestation de fin de formation.</li>
+                <li>Formation tout catégorie.</li>
+                <li>Durée de formation : 4 mois.</li>
+                <li>Inscription toute l’année.</li>
+            </ul>
+        </div>
+        </section>
+        
+        <!-- Sprint 2: Avantages -->
+        <section class="sprint">
+        <h3>Avantages de se faire former</h3>
+        <div class="content">
+            <p><strong>Inclus dans ma formation</strong></p>
+            <ul>
+                <li>Accès 24/24 et 7/7 jours.</li>
+                <li>Conventions de stages.</li>
+                <li>Garantie Diplômé ou Remboursé.</li>
+                <li>Coaching personnalisé.</li>
+            </ul>
+        </div>
+        </section>
+        
+        <!-- Sprint 3: Formulaire -->
+        <section class="sprint form-card">
+        <h3>Obtenir une brochure et un essai gratuit sans engagement</h3>
+        <form>
+            <label for="formation">Quelle formation vous intéresse ? *</label>
+            <select id="formation" name="formation" required>
+                <option value="nutritionniste">Nutritionniste</option>
+                <!-- Ajouter d'autres options si nécessaire -->
+            </select>
+            <button type="submit">Suivant</button>
+        </form>
+        </section>
+        </div>
+</section>
